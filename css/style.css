@@ -36,10 +36,11 @@ body > header .wrapper{
 #logo h1{
     font-size: 26px;
     margin: 5px 0 0 0;
+    color: green
 }
 
 #logo h1 span{
-    color: #ff9466;
+    color: green;
 }
 
 nav ul{
@@ -60,8 +61,12 @@ nav ul li a:hover{
     color: #ff9466;
 }
 
+nav ul li a.desactive{
+    color: green;
+}
+
 nav ul li a.active{
-    color: #a166ff;
+    color: red;
 }
 
 main{
@@ -73,4 +78,26 @@ main{
 footer{
     background-color: #000;
     height: 200px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table , th , td{
+    border-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+td , th{
+    padding: 7px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: gray;
 }
