@@ -6,6 +6,7 @@
         <title>IF Investments - Cadastro</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
         <header>
             <div class="wrapper">
@@ -22,14 +23,55 @@
                 </nav>
             </div>
         </header>
+
         <main>
             <div class="wrapper">
                 <h1>Bem vindo a pagina Cadastro</h1>
+                <form>
+                    <label for="nameUser">Nome completo</label>
+                    <input type="text" name="nameUser" id="nameUser" placeholder="Digite seu primeiro nome">
+
+                    <label for="nameUser">Sobrenome</label>
+                    <input type="text" name="surnameUser" id="=surnameUser" placeholder="Digite seu sobrenome">
+
+                    <label for="password">Senha:</label>
+                    <input type="password" name="passwordUser" id="=passwordUser" placeholder="Digite sua senha">
+
+                    <h3>Qual seu perfil de investidor?</h3> 
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="conservador" value="conservador">
+                        <label for="conservador">Conservador</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="moderado" value="moderado">
+                        <label for="moderado">Moderado</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="arrojado" value="arrojado">
+                        <label for="arrojado">Arrojado</label>
+                    </div>
+
+                    <h3>Quais tipos de investimentos você tem interesse?</h3>
+                    <div>
+                        <input type="checkbox" name="investimentos[]" id="rendaFixa" value="rf">
+                        <label for="rf">Renda Fixa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="investimentos[]" id="rendaVariavel" value="rv">
+                        <label for="rv">Fundos Imobiliarios</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="investimentos[]" id="criptoativos" value="ca">
+                        <label for="ca">Criptoativos</label>
+                    </div>
+
+                </form>
             </div>
         </main>
+
         <footer>
             <div class="wrapper">
             </div>
         </footer>
     </body>
-</html>
+</html> 
