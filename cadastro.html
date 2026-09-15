@@ -28,15 +28,21 @@
             <div class="wrapper">
                 <h1>Bem vindo a pagina Cadastro</h1>
                 <form>
-                    <label for="nameUser">Nome completo</label>
-                    <input type="text" name="nameUser" id="nameUser" placeholder="Digite seu primeiro nome">
+                    <fieldset>
+                        <legend>Informações pessoais</legend>
+                        <label for="nameUser">Nome completo</label>
+                        <input type="text" name="nameUser" id="nameUser" placeholder="Digite seu primeiro nome">
 
-                    <label for="nameUser">Sobrenome</label>
-                    <input type="text" name="surnameUser" id="=surnameUser" placeholder="Digite seu sobrenome">
+                        <label for="nameUser">Sobrenome</label>
+                        <input type="text" name="surnameUser" id="=surnameUser" placeholder="Digite seu sobrenome">
 
-                    <label for="password">Senha:</label>
-                    <input type="password" name="passwordUser" id="=passwordUser" placeholder="Digite sua senha">
+                        <label for="telUser">Telefone:</label>
+                        <input type="tel" name="telUser" id="telUser" placeholder="EX: (00) 00000-0000">
 
+                        <label for="cpfUser">CPF:</label>
+                        <input type="number" name="cpfUser" id="cpfUser" placeholder="EX: 000-000-000-00">
+                    </fieldset>
+                    
                     <h3>Qual seu perfil de investidor?</h3> 
                     <div>
                         <input type="radio" name="perfilInvestidor" id="conservador" value="conservador">
@@ -49,6 +55,20 @@
                     <div>
                         <input type="radio" name="perfilInvestidor" id="arrojado" value="arrojado">
                         <label for="arrojado">Arrojado</label>
+                    </div>
+
+                    <h3>Como você descobriu a plataforma?</h3>
+                    <div>
+                        <input type="radio" name="t" id="conservador" value="conservador">
+                        <label for="conservador">Conservador</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="conservador" value="conservador">
+                        <label for="conservador">Conservador</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="conservador" value="conservador">
+                        <label for="conservador">Conservador</label>
                     </div>
 
                     <h3>Quais tipos de investimentos você tem interesse?</h3>
@@ -64,7 +84,49 @@
                         <input type="checkbox" name="investimentos[]" id="criptoativos" value="ca">
                         <label for="ca">Criptoativos</label>
                     </div>
+                    
+                    <fieldset class="fieldTop">
+                        <legend>Dados de acesso</legend>
+                        <label for="emailUser">E-mail:</label>
+                        <input type="email" name="emailUser" id="emailUser" placeholder="Digite seu email aqui">
+                        
+                        <label for="password">Senha:</label>
+                        <input type="password" name="passwordUser" id="=passwordUser" placeholder="Digite sua senha">
+                    </fieldset>
+                    
+                    <fieldset class="fieldTop">
+                        <legend>Endereço</legend>
+                        <label for="estateUser">Avenida e Rua</label>
+                        <input type="text" name="streetUser" id="streetUser" placeholder="Avenida, rua e numero">
 
+                        <label for="postalcodeUser">CEP:</label>
+                        <input type="number" name="postalcodeUser" id="postalcodeUser" placeholder="EX: 00000-000">
+                        <label for="stateUser">Estado</label>
+                        <select name="stateUser" id="stateUser">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="es">Espirito Santo</option>
+                        </select>
+
+
+                    </fieldset>
+
+                    <label for="investmentGoalUser">Objetivo de investimento:</label>
+                    <textarea rows="5" name="investmentGoalUser" id="investmentGoalUser" placeholder="Descreva seu objetivo de investimento..."></textarea>
+                    <div>
+                    <input type="checkbox" name="termsUser" id="termsUser" required>
+                    <label for="termsUser">Aceitar termos de uso</label>
+                    </div>
+
+                    <div>
+                    <input type="checkbox" name="promotionalUser" id="promotionalUser">
+                    <label for="promotionalUser">Aceitar notificações de promoções e investimentos</label>
+                    </div>
+
+                    <input type="submit" value="cadastrar">
+                    
+                    
                 </form>
             </div>
         </main>
